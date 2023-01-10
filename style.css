@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--font-sarala);
+    font-size: 100%;
+    background-image: linear-gradient(68.15deg, #2F2325 14.62%, #8E5D52 87.61%);;
+}
+
+:root{
+    --font-righteous: 'Righteous', cursive;
+    --font-sarala: 'Sarala', sans-serif;
+
+}
+
+/* Cabeçalho */
+
+.cabecalho{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho-logo{
+    height: 50px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-link{
+    font-size: 1.2rem;
+    color: #fafafa;
+    transition: all .5s;
+}
+
+.cabecalho-link:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+    .cabecalho img{
+        display: none;
+    }
+
+    .cabecalho-menu{
+        gap: 10px;
+    }
+    
+    .cabecalho-link{
+        font-size: 1rem;
+    }
+}
+
+/* Conteudo */
+
+.conteudo{
+    border-top: .5px solid #fafafa;
+    padding: 10px;
+    color: #fafafa;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo hr{
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.conteudo-img{
+    max-width: 100%;
+}
+
+.principal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.principal-textos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.principal h1{
+    font-family: var(--font-righteous);
+    font-size: 3rem;
+}
+
+.principal h2{
+    font-size: 1rem;
+}
+
+.principal button{
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+    padding: 5px;
+    background-color: #ECD6C4;
+}
+
+.secundario{
+    margin-bottom: 48px; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.secundario h3{
+    font-size: 1.5rem;
+}
+
+/* Footer */
+
+.footer{
+    border-top: .5px solid #fafafa;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer img{
+    max-width: 100%;
+}
